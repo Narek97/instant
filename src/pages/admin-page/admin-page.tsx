@@ -8,7 +8,7 @@ import {
   useSearchParams,
 } from 'next/navigation'
 import CustomTabs from '@/components/ui/custom-tabs/custom-tabs'
-import { ADMIN_TAB_PANELS, ADMIN_TABS } from '@/constants/tabs'
+import { ADMIN_TABS, ADMIN_TAB_PANELS } from '@/constants/tabs'
 
 const Page = () => {
   const pathname = usePathname()
