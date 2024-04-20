@@ -1,37 +1,37 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback } from 'react'
 
-type SearchParams = URLSearchParams;
+type SearchParams = URLSearchParams
 
 interface QueryParamsHook {
-  searchParams: SearchParams;
-  updateQueryParam: (name: string, value: string) => void;
-  createQueryString: (name: string, value: string) => string;
+  searchParams: SearchParams
+  updateQueryParam: (name: string, value: string) => void
+  createQueryString: (name: string, value: string) => string
 }
 
 const useQueryParams = (): QueryParamsHook => {
   const [searchParams, setSearchParams] = useState<SearchParams>(
-    new URLSearchParams(),
-  );
+    new URLSearchParams()
+  )
 
   const updateQueryParam = useCallback(
     (name: string, value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
-      params.set(name, value);
-      setSearchParams(params);
+      const params = new URLSearchParams(searchParams.toString())
+      params.set(name, value)
+      setSearchParams(params)
     },
-    [searchParams],
-  );
+    [searchParams]
+  )
 
   const createQueryString = useCallback(
     (name: string, value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
-      params.set(name, value);
-      return params.toString();
+      const params = new URLSearchParams(searchParams.toString())
+      params.set(name, value)
+      return params.toString()
     },
-    [searchParams],
-  );
+    [searchParams]
+  )
 
-  return { searchParams, updateQueryParam, createQueryString };
-};
+  return { searchParams, updateQueryParam, createQueryString }
+}
 
-export default useQueryParams;
+export default useQueryParams

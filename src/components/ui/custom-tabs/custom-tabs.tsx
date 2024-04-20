@@ -1,37 +1,37 @@
-import TabContext from "@mui/lab/TabContext";
-import TabPanel from "@mui/lab/TabPanel";
-import Tab from "@mui/material/Tab";
-import Tabs from "@mui/material/Tabs";
-import React, { FC, memo, Suspense } from "react";
-import "./custom-tabs.scss";
-import { TabPanelType, TabType } from "@/ts/types";
-import CustomLoader from "@/components/ui/custom-loader/custom-loader";
+import TabContext from '@mui/lab/TabContext'
+import TabPanel from '@mui/lab/TabPanel'
+import Tab from '@mui/material/Tab'
+import Tabs from '@mui/material/Tabs'
+import React, { FC, memo, Suspense } from 'react'
+import './custom-tabs.scss'
+import { TabPanelType, TabType } from '@/ts/types'
+import CustomLoader from '@/components/ui/custom-loader/custom-loader'
 
-type indicatorTypes = "linear" | "circular";
+type indicatorTypes = 'linear' | 'circular'
 
 interface ICustomTabs {
-  orientation?: "vertical" | "horizontal";
-  tabsBottomBorderColor: string;
-  tabs: TabType[];
-  tabValue: string;
-  setTabValue: (tab: string, label?: string) => void;
-  tabPanels: TabPanelType[];
-  indicatorType?: indicatorTypes;
-  showTabsBottomLine?: boolean;
-  disableRipple?: boolean;
-  activeColor?: string;
-  inactiveColor: string;
-  variant?: "standard" | "scrollable" | "fullWidth";
+  orientation?: 'vertical' | 'horizontal'
+  tabsBottomBorderColor: string
+  tabs: TabType[]
+  tabValue: string
+  setTabValue: (tab: string, label?: string) => void
+  tabPanels: TabPanelType[]
+  indicatorType?: indicatorTypes
+  showTabsBottomLine?: boolean
+  disableRipple?: boolean
+  activeColor?: string
+  inactiveColor: string
+  variant?: 'standard' | 'scrollable' | 'fullWidth'
 }
 
 const CustomTabs: FC<ICustomTabs> = ({
-  orientation = "horizontal",
+  orientation = 'horizontal',
   tabValue,
   setTabValue,
   tabs = [],
   tabPanels,
   tabsBottomBorderColor,
-  indicatorType = "linear",
+  indicatorType = 'linear',
   showTabsBottomLine = true,
   disableRipple = true,
   activeColor,
@@ -39,79 +39,79 @@ const CustomTabs: FC<ICustomTabs> = ({
   variant,
 }) => {
   const onPageChange = (tabName: string, label: string) => {
-    setTabValue(tabName, label);
-  };
+    setTabValue(tabName, label)
+  }
   const getTabStyleByIndicatorType = (type: indicatorTypes) => {
     const primaryStyle = {
-      "&.MuiTabs-root": {
-        ".MuiTabScrollButton-root": {
-          width: "32px",
+      '&.MuiTabs-root': {
+        '.MuiTabScrollButton-root': {
+          width: '32px',
         },
       },
-      "& .MuiTab-root": {
+      '& .MuiTab-root': {
         color: inactiveColor,
       },
-      "& .MuiTab-root.Mui-selected": {
+      '& .MuiTab-root.Mui-selected': {
         color: activeColor,
       },
-    };
-    let tabStyle = {};
+    }
+    let tabStyle = {}
     switch (type) {
-      case "linear":
+      case 'linear':
         tabStyle = {
-          minHeight: "25px",
-        };
-        break;
-      case "circular":
+          minHeight: '25px',
+        }
+        break
+      case 'circular':
         tabStyle = {
-          "& .MuiTab-root.Mui-selected": {
+          '& .MuiTab-root.Mui-selected': {
             color: activeColor,
           },
-          "& .MuiTabs-indicator": {
-            display: "flex",
-            justifyContent: "center",
-            backgroundColor: "transparent",
+          '& .MuiTabs-indicator': {
+            display: 'flex',
+            justifyContent: 'center',
+            backgroundColor: 'transparent',
           },
-        };
-        break;
+        }
+        break
     }
     return {
       ...primaryStyle,
       ...tabStyle,
-    };
-  };
+    }
+  }
 
   const getIndicatorStyleByIndicatorType = (type: indicatorTypes) => {
     switch (type) {
-      case "linear":
-        return {};
-      case "circular":
+      case 'linear':
+        return {}
+      case 'circular':
         return {
           children: <span className="MuiTabs-indicatorSpan" />,
           sx: {
-            bottom: "4px",
-            "& .MuiTabs-indicatorSpan": {
+            bottom: '4px',
+            '& .MuiTabs-indicatorSpan': {
               width: 4,
               height: 4,
-              borderRadius: "30px",
+              borderRadius: '30px',
               backgroundColor: activeColor,
             },
           },
-        };
+        }
     }
-  };
+  }
 
-  const tabsStyles = getTabStyleByIndicatorType(indicatorType);
+  const tabsStyles = getTabStyleByIndicatorType(indicatorType)
 
-  const tabIndicatorProps = getIndicatorStyleByIndicatorType(indicatorType);
+  const tabIndicatorProps = getIndicatorStyleByIndicatorType(indicatorType)
 
   return (
-    <div className={"custom-tabs"}>
+    <div className={'custom-tabs'}>
       <TabContext value={tabValue}>
-        <div className={"custom-tabs--content"}>
+        <div className={'custom-tabs--content'}>
           {showTabsBottomLine && (
             <div
-              className={"tabs-divider-line"}
+              className={'tabs-divider-line'}
               style={{ backgroundColor: tabsBottomBorderColor }}
             />
           )}
@@ -121,13 +121,13 @@ const CustomTabs: FC<ICustomTabs> = ({
             sx={tabsStyles}
             variant={variant}
             TabIndicatorProps={tabIndicatorProps}
-            className={"custom-tabs--tabs"}
+            className={'custom-tabs--tabs'}
           >
             {tabs.map((tab, index) => (
               <Tab
                 {...tab}
                 key={index}
-                className={"custom-tabs--tab"}
+                className={'custom-tabs--tab'}
                 data-testid="custom-tab-test-id"
                 disableRipple={disableRipple}
                 sx={{ minWidth: 0 }}
@@ -140,7 +140,7 @@ const CustomTabs: FC<ICustomTabs> = ({
           <TabPanel
             value={value}
             key={index}
-            className={"custom-tabs--panel"}
+            className={'custom-tabs--panel'}
             sx={{ padding: 0 }}
           >
             <Suspense fallback={<CustomLoader />}>{page}</Suspense>
@@ -148,7 +148,7 @@ const CustomTabs: FC<ICustomTabs> = ({
         ))}
       </TabContext>
     </div>
-  );
-};
+  )
+}
 
-export default memo(CustomTabs);
+export default memo(CustomTabs)

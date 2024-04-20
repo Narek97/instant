@@ -1,7 +1,7 @@
-import { atom } from "recoil";
-import { Usertype } from "@/ts/types";
+import { atom } from 'recoil'
+import { Usertype } from '@/ts/types'
 
 export const userState = atom({
-  key: "user",
+  key: 'user',
   default: null as Usertype | null,
-});
+})
