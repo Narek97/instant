@@ -1,5 +1,5 @@
 'use client'
-import React, { Suspense, useCallback } from 'react'
+import React, { Suspense, useCallback, memo } from 'react'
 import './admin-page.scss'
 import {
   ReadonlyURLSearchParams,
