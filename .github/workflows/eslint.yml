@@ -22,8 +22,11 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Use Yarn
+        run: npm install -g yarn@latest
+
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
 
       - name: Run ESLint
-        run: npx eslint .
+        run: yarn lint
