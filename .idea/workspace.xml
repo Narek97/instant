@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="eslint">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin-page/admin-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin-page/admin-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +39,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "eslint",
+    "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "20.10.0",
     "javascript.nodejs.core.library.typings.version": "20.10.8",
-    "last_opened_file_path": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice/src/app/api",
+    "last_opened_file_path": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.stylelint": "true",
@@ -107,6 +104,8 @@
       <list>
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.format" />
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.format" />
       </list>
     </recent_temporary>
   </component>
@@ -131,6 +130,7 @@
       <workItem from="1713514746365" duration="3285000" />
       <workItem from="1713521206792" duration="16385000" />
       <workItem from="1713616616611" duration="98000" />
+      <workItem from="1713637747059" duration="785000" />
     </task>
     <task id="LOCAL-00001" summary="ui design">
       <option name="closed" value="true" />
