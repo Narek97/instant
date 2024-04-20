@@ -1,0 +1,9 @@
+.base-layout {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  &--header {
+    height: 48px;
+    background: #545e6b;
+  }
+}

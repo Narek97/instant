@@ -1,0 +1,11 @@
+@import "src/assets/styles/variables";
+@import "src/assets/styles/mixins";
+
+.not-found{
+  @include absolute-center;
+  @include flex-center-center;
+  flex-direction: column;
+  gap: 20px;
+  color: $BASE-ERROR-COLOR;
+  font-size: 16px;
+}

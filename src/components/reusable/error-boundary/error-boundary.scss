@@ -1,0 +1,39 @@
+@import "src/assets/styles/variables";
+@import "src/assets/styles/mixins";
+
+.error-boundary {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid $BASE-ERROR-COLOR;
+  border-radius: 4px;
+  color: $BASE-ERROR-COLOR;
+  background-color: rgba(229, 50, 81, 0.1);
+
+  &--title {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &--more-btn {
+    margin-top: 4px;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: rgba(229, 50, 81, 0.1);
+  }
+
+  &--modal-content {
+    height: 60dvh;
+    overflow: auto;
+    margin: 40px 10px;
+    color: $BASE_GRAY_COLOR;
+    p {
+      -webkit-user-select: all;
+      -ms-user-select: all;
+      user-select: all;
+    }
+  }
+}

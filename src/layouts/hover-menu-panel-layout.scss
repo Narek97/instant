@@ -1,0 +1,13 @@
+.hover-menu-panel-layout {
+  position: relative;
+  display: flex;
+  flex: 1;
+  &--menu {
+    width: 50px;
+  }
+  &--content {
+    flex: 1;
+    height: calc(100dvh - 48px);
+    overflow: auto;
+  }
+}

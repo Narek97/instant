@@ -1,0 +1,129 @@
+@import "../../../../assets/styles/variables";
+
+.product-switcher {
+  position: absolute;
+  z-index: 9;
+  width: 304px;
+  top: 48px;
+  left: 0;
+  opacity: 0;
+  box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+  transform: translate(0, calc(-100% - 48px));
+  transition: 0.4s;
+
+  &--item {
+    position: relative;
+    max-height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    color: $BASE_GRAY_COLOR;
+
+    &--content {
+      position: inherit;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 12px;
+      border-top: 4px solid;
+      background-color: $BASE-WHITE-COLOR;
+
+      &--block {
+        display: flex;
+        gap: 8px;
+      }
+    }
+
+    &--name {
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    &--desc {
+      font-size: 12px;
+      font-weight: 300;
+    }
+
+    &:hover {
+      .product-switcher--item--content {
+        box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+        z-index: 2;
+      }
+
+      .product-switcher--item--arrow {
+        display: none;
+      }
+
+      .product-switcher--hover--item {
+        left: 100%;
+        box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+      }
+    }
+  }
+
+  &--hover--item {
+    width: fit-content;
+    display: flex;
+    height: 60px;
+    top: 0;
+    position: absolute;
+    right: 0;
+    left: -100%;
+    transition: 0.5s;
+    background-color: $BASE-WHITE-COLOR;
+
+    &--li {
+      width: 92px;
+      padding: 9px 6px 4px;
+      border-top: 4px solid transparent;
+
+      img {
+        filter: invert(43%) sepia(97%) saturate(701%) hue-rotate(178deg)
+          brightness(88%) contrast(106%);
+        -webkit-filter: invert(43%) sepia(97%) saturate(701%) hue-rotate(178deg)
+          brightness(88%) contrast(106%);
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.03);
+
+        img {
+          filter: invert(83%) sepia(97%) saturate(701%) hue-rotate(178deg)
+            brightness(88%) contrast(106%);
+          -webkit-filter: invert(83%) sepia(97%) saturate(701%)
+            hue-rotate(178deg) brightness(88%) contrast(106%);
+        }
+      }
+    }
+
+    &--link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &--name {
+      font-size: 13px;
+      font-weight: 400;
+      color: $BASE_GRAY_COLOR;
+    }
+
+    &--icon {
+      display: flex;
+      align-items: center;
+      height: 24px;
+    }
+
+    &--lock {
+      width: 92px;
+      text-align: center;
+      font-size: 12px;
+      color: #f5a300;
+    }
+  }
+}
+
+.product-switcher-open {
+  opacity: 1;
+  transform: translate(0, 0);
+}
