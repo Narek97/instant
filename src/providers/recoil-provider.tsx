@@ -1,13 +1,13 @@
-"use client";
-import React, { FC } from "react";
-import { RecoilRoot } from "recoil";
+'use client'
+import React, { FC } from 'react'
+import { RecoilRoot } from 'recoil'
 
 interface IRecoilProvider {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 const RecoilProvider: FC<IRecoilProvider> = ({ children }) => {
-  return <RecoilRoot>{children}</RecoilRoot>;
-};
+  return <RecoilRoot>{children}</RecoilRoot>
+}
 
-export default RecoilProvider;
+export default RecoilProvider

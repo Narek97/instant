@@ -1,24 +1,24 @@
-import axios from "axios";
-import { API_BASE_URL } from "@/constants/env";
+import axios from 'axios'
+import { API_BASE_URL } from '@/constants/env'
 
 export async function GET(request: Request) {
-  const authHeader = request.headers.get("Authorization");
-  const queryParams = new URLSearchParams(request.url.split("?")[1]);
-  const page = queryParams.get("page");
-  const perPage = queryParams.get("perPage");
+  const authHeader = request.headers.get('Authorization')
+  const queryParams = new URLSearchParams(request.url.split('?')[1])
+  const page = queryParams.get('page')
+  const perPage = queryParams.get('perPage')
 
   const configs = {
     headers: {
       Authorization: authHeader,
     },
-  };
+  }
 
-  console.log("log");
+  console.log('log')
 
   return axios
     .get(`${API_BASE_URL}/api-errors?page=${page}&perPage=${perPage}`, configs)
     .then((response) => Response.json(response.data))
     .catch((error) => {
-      throw new Error(error);
-    });
+      throw new Error(error)
+    })
 }

@@ -1,10 +1,10 @@
-import { FC } from "react";
-import "./product-switcher.scss";
-import { ProductSwitcherMenuItemType } from "@/ts/types";
-import ProductSwitcherMenuItem from "@/components/templates/header-templates/product-switcher/product-switcher-menu-item";
+import React, { FC } from 'react'
+import './product-switcher.scss'
+// import { ProductSwitcherMenuItemType } from '@/ts/types'
+// import ProductSwitcherMenuItem from '@/components/templates/header-templates/product-switcher/product-switcher-menu-item'
 
 interface IProductSwitcher {
-  isOpen: boolean;
+  isOpen: boolean
 }
 
 const ProductSwitcher: FC<IProductSwitcher> = ({ isOpen }) => {
@@ -20,7 +20,7 @@ const ProductSwitcher: FC<IProductSwitcher> = ({ isOpen }) => {
 
   return (
     <ul
-      className={`product-switcher ${isOpen ? "product-switcher-open" : ""}`}
+      className={`product-switcher ${isOpen ? 'product-switcher-open' : ''}`}
       data-testid="product-switcher-test-id"
     >
       {/*{productSwitcherData?.getProductSwitcher?.headerInfo?.length &&*/}
@@ -30,7 +30,7 @@ const ProductSwitcher: FC<IProductSwitcher> = ({ isOpen }) => {
       {/*    },*/}
       {/*  )}*/}
     </ul>
-  );
-};
+  )
+}
 
-export default ProductSwitcher;
+export default ProductSwitcher

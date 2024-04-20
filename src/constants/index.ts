@@ -1,1 +1,1 @@
-export const TOKEN_NAME = "instant-token";
+export const TOKEN_NAME = 'instant-token'

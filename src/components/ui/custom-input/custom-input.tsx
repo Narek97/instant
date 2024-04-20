@@ -1,24 +1,24 @@
-import { InputAdornment, TextField, TextFieldProps } from "@mui/material";
-import { FC, memo, Ref } from "react";
-import "./custom-Input.scss";
-import Search from "@/assets/icons/search.svg";
-import { ObjectKeysType } from "@/ts/types";
+import { InputAdornment, TextField, TextFieldProps } from '@mui/material'
+import React, { FC, memo, Ref } from 'react'
+import './custom-Input.scss'
+import Search from '@/assets/icons/search.svg'
+import { ObjectKeysType } from '@/ts/types'
 
 interface ICustomInput {
-  inputType?: "primary" | "secondary";
-  isIconInput?: boolean;
-  maxLength?: number;
-  minLength?: number;
-  iconInput?: JSX.Element;
-  sxStyles?: any;
-  min?: number;
-  max?: number;
-  step?: number;
-  inputRef?: Ref<HTMLInputElement>;
+  inputType?: 'primary' | 'secondary'
+  isIconInput?: boolean
+  maxLength?: number
+  minLength?: number
+  iconInput?: React.ReactNode
+  sxStyles?: any
+  min?: number
+  max?: number
+  step?: number
+  inputRef?: Ref<HTMLInputElement>
 }
 
 const CustomInput: FC<ICustomInput & TextFieldProps> = ({
-  inputType = "primary",
+  inputType = 'primary',
   isIconInput = false,
   rows = 0,
   sxStyles,
@@ -33,31 +33,31 @@ const CustomInput: FC<ICustomInput & TextFieldProps> = ({
   ...inputRestParams
 }) => {
   const style = {
-    width: "100%",
-    backgroundColor: "#FFFFFF",
-    borderBottom: "none",
+    width: '100%',
+    backgroundColor: '#FFFFFF',
+    borderBottom: 'none',
     ...sxStyles,
-  };
+  }
 
   const customStyle: ObjectKeysType = {
     primary: {
       ...style,
-      backgroundColor: "#F5F5F5",
+      backgroundColor: '#F5F5F5',
     },
     secondary: {
       ...style,
     },
-  };
+  }
 
   const endAdornment = () => {
     return isIconInput ? (
-      <InputAdornment position={"start"}>
-        {iconInput || <Search className={"custom-input--svg"} />}
+      <InputAdornment position={'start'}>
+        {iconInput || <Search className={'custom-input--svg'} />}
       </InputAdornment>
     ) : (
       <></>
-    );
-  };
+    )
+  }
 
   return (
     <TextField
@@ -65,7 +65,7 @@ const CustomInput: FC<ICustomInput & TextFieldProps> = ({
       autoComplete="off"
       sx={customStyle[inputType]}
       variant="standard"
-      className={`custom-input ${className || ""}`}
+      className={`custom-input ${className || ''}`}
       rows={rows}
       inputProps={{ maxLength, minLength, min, max, step }}
       inputRef={inputRef}
@@ -73,7 +73,7 @@ const CustomInput: FC<ICustomInput & TextFieldProps> = ({
         endAdornment: endAdornment(),
       }}
     />
-  );
-};
+  )
+}
 
-export default memo(CustomInput);
+export default memo(CustomInput)

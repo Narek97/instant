@@ -1,9 +1,10 @@
-import React, { FC } from "react";
-import { StyledTableCell } from "@/components/ui/custom-table/custom-table";
-import dayjs from "dayjs";
+import React, { FC } from 'react'
+import { StyledTableCell } from '@/components/ui/custom-table/custom-table'
+import dayjs from 'dayjs'
+import { ApiLog } from '@/ts/types/admin'
 
 interface IApiLogsRow {
-  row: ApiLog;
+  row: ApiLog
 }
 
 const ApiLogsRow: FC<IApiLogsRow> = ({ row }) => {
@@ -16,11 +17,11 @@ const ApiLogsRow: FC<IApiLogsRow> = ({ row }) => {
       <StyledTableCell>{row.path}</StyledTableCell>
       <StyledTableCell>{row.method}</StyledTableCell>
       <StyledTableCell>
-        {dayjs(row?.created_at).format("MMMM D YYYY, h:mm a")}
+        {dayjs(row?.created_at).format('MMMM D YYYY, h:mm a')}
       </StyledTableCell>
       <StyledTableCell></StyledTableCell>
     </>
-  );
-};
+  )
+}
 
-export default ApiLogsRow;
+export default ApiLogsRow

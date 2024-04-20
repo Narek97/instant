@@ -1,3 +1,4 @@
+import React from 'react'
 // import { useNavigate, useSearchParams } from "react-router-dom";
 
 const Auth = () => {
@@ -24,7 +25,7 @@ const Auth = () => {
   //   return <CustomLoader />;
   // }
 
-  return <></>;
-};
+  return <></>
+}
 
-export default Auth;
+export default Auth

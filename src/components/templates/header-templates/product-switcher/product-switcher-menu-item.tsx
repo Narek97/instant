@@ -1,34 +1,34 @@
-import { FC, useState } from "react";
-import RightArrow from "@/assets/icons/right-secondary-arrow.svg";
-import Lock from "@/assets/icons/header-icons/lock.svg";
-import { ProductSwitcherMenuItemType } from "@/ts/types";
-import ProductSwitcherMenuHoveredItem from "@/components/templates/header-templates/product-switcher/product-switcher-menu-hovered-Item";
-import { PRODUCT_SWITCHER_COLORS } from "@/constants/colors";
+import React, { FC, useState } from 'react'
+import RightArrow from '@/assets/icons/right-secondary-arrow.svg'
+import Lock from '@/assets/icons/header-icons/lock.svg'
+import { ProductSwitcherMenuItemType } from '@/ts/types'
+import ProductSwitcherMenuHoveredItem from '@/components/templates/header-templates/product-switcher/product-switcher-menu-hovered-Item'
+import { PRODUCT_SWITCHER_COLORS } from '@/constants/colors'
 
 interface IProductSwitcherMenuItem {
-  menuItem: ProductSwitcherMenuItemType;
+  menuItem: ProductSwitcherMenuItemType
 }
 
 const ProductSwitcherMenuItem: FC<IProductSwitcherMenuItem> = ({
   menuItem,
 }) => {
-  const [hovered, setHovered] = useState<boolean>(false);
+  const [hovered, setHovered] = useState<boolean>(false)
   return (
     <li
       data-testid="product-switcher--item-test-id"
-      className={"product-switcher--item"}
+      className={'product-switcher--item'}
       onMouseOver={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       <div
-        className={"product-switcher--item--content"}
+        className={'product-switcher--item--content'}
         style={
           hovered
-            ? { borderColor: PRODUCT_SWITCHER_COLORS[menuItem?.name || ""] }
-            : { borderColor: "transparent" }
+            ? { borderColor: PRODUCT_SWITCHER_COLORS[menuItem?.name || ''] }
+            : { borderColor: 'transparent' }
         }
       >
-        <div className={"product-switcher--item--content--block"}>
+        <div className={'product-switcher--item--content--block'}>
           <div>
             <img
               src={menuItem?.logo}
@@ -38,15 +38,15 @@ const ProductSwitcherMenuItem: FC<IProductSwitcherMenuItem> = ({
             />
           </div>
           <div>
-            <p className={"product-switcher--item--name"}>{menuItem?.name}</p>
-            <p className={"product-switcher--item--desc"}>{menuItem?.desc}</p>
+            <p className={'product-switcher--item--name'}>{menuItem?.name}</p>
+            <p className={'product-switcher--item--desc'}>{menuItem?.desc}</p>
           </div>
         </div>
         {menuItem?.active ? (
           <RightArrow
             width={6}
-            className={"product-switcher--item--arrow"}
-            fill={"#545e6b"}
+            className={'product-switcher--item--arrow'}
+            fill={'#545e6b'}
           />
         ) : (
           <Lock />
@@ -54,7 +54,7 @@ const ProductSwitcherMenuItem: FC<IProductSwitcherMenuItem> = ({
       </div>
 
       {menuItem?.active && (
-        <ul className={"product-switcher--hover--item"}>
+        <ul className={'product-switcher--hover--item'}>
           {menuItem?.products.map((item, index: number) => {
             return (
               <ProductSwitcherMenuHoveredItem
@@ -62,12 +62,12 @@ const ProductSwitcherMenuItem: FC<IProductSwitcherMenuItem> = ({
                 item={item}
                 key={index}
               />
-            );
+            )
           })}
         </ul>
       )}
     </li>
-  );
-};
+  )
+}
 
-export default ProductSwitcherMenuItem;
+export default ProductSwitcherMenuItem

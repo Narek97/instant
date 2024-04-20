@@ -1,52 +1,50 @@
-"use client";
-import { ClickAwayListener } from "@mui/material";
-import { useState } from "react";
-import "./header.scss";
-import { useRecoilValue } from "recoil";
-import BottomArrow from "@/assets/icons/bottom-arrow.svg";
-import QPLogo from "@/assets/icons/header-icons/logo.svg";
-import { userState } from "@/store/atoms/user.atom";
-import ProductSwitcher from "@/components/templates/header-templates/product-switcher/product-switcher";
+'use client'
+import { ClickAwayListener } from '@mui/material'
+import React, { useState } from 'react'
+import './header.scss'
+import BottomArrow from '@/assets/icons/bottom-arrow.svg'
+import QPLogo from '@/assets/icons/header-icons/logo.svg'
+import ProductSwitcher from '@/components/templates/header-templates/product-switcher/product-switcher'
 // import { userState } from "../../../store/atoms/user.atom";
 // import CustomAvatar from "../../ui/custom-avatar/custom-avatar.tsx";
 // import CustomBreadCrumbs from "../../ui/custom-bread-crumb/custom-bread-crumb.tsx";
 // import CustomPopover from "../../ui/custom-popover/custom-popover";
 
 const Header = () => {
-  const user = useRecoilValue(userState);
-  const [openSwitcher, setOpenSwitcher] = useState<boolean>(false);
+  // const user = useRecoilValue(userState)
+  const [openSwitcher, setOpenSwitcher] = useState<boolean>(false)
 
   const handleClick = () => {
-    setOpenSwitcher((prev) => !prev);
-  };
+    setOpenSwitcher((prev) => !prev)
+  }
 
   const handleClickAway = () => {
-    setOpenSwitcher(false);
-  };
+    setOpenSwitcher(false)
+  }
 
   return (
     <header
-      className={`base-header ${openSwitcher ? "base-header-open" : ""}`}
+      className={`base-header ${openSwitcher ? 'base-header-open' : ''}`}
       data-testid="base-header-test-id"
     >
-      <div className={"base-header--left-block"}>
+      <div className={'base-header--left-block'}>
         <ClickAwayListener
           mouseEvent="onMouseDown"
           touchEvent="onTouchStart"
           onClickAway={handleClickAway}
         >
           <div onClick={handleClick} data-testid="main-logo-test-id">
-            <div className={"base-header--menu"}>
+            <div className={'base-header--menu'}>
               <QPLogo />
-              <h1 className={"base-header--menu--title"}>Instant</h1>
-              <BottomArrow className="base-header--menu--arrow" fill={"#fff"} />
+              <h1 className={'base-header--menu--title'}>Instant</h1>
+              <BottomArrow className="base-header--menu--arrow" fill={'#fff'} />
             </div>
             <ProductSwitcher isOpen={openSwitcher} />
           </div>
         </ClickAwayListener>
       </div>
       {/*<CustomBreadCrumbs />*/}
-      <div className={"base-header--right-block"}>
+      <div className={'base-header--right-block'}>
         {/*<CustomPopover*/}
         {/*  popoverButton={*/}
         {/*    <CustomAvatar*/}
@@ -66,7 +64,7 @@ const Header = () => {
         {/*</CustomPopover>*/}
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

@@ -1,9 +1,10 @@
-import React, { FC } from "react";
-import { StyledTableCell } from "@/components/ui/custom-table/custom-table";
-import dayjs from "dayjs";
+import React, { FC } from 'react'
+import { StyledTableCell } from '@/components/ui/custom-table/custom-table'
+import dayjs from 'dayjs'
+import { ErrorLog } from '@/ts/types/admin'
 
 interface IErrorLogRow {
-  row: ErrorLog;
+  row: ErrorLog
 }
 
 const ErrorLogRow: FC<IErrorLogRow> = ({ row }) => {
@@ -15,11 +16,11 @@ const ErrorLogRow: FC<IErrorLogRow> = ({ row }) => {
       <StyledTableCell>{row.path}</StyledTableCell>
       <StyledTableCell>{row.method}</StyledTableCell>
       <StyledTableCell>
-        {dayjs(row?.created_at).format("MMMM D YYYY, h:mm a")}
+        {dayjs(row?.created_at).format('MMMM D YYYY, h:mm a')}
       </StyledTableCell>
       <StyledTableCell></StyledTableCell>
     </>
-  );
-};
+  )
+}
 
-export default ErrorLogRow;
+export default ErrorLogRow
