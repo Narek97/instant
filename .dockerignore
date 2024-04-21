@@ -1,0 +1,15 @@
+# Ignore node_modules except npm-shrinkwrap.json or package-lock.json if present
+node_modules
+
+# Ignore log files
+*.log
+
+# Ignore .env file, your local env variables won't be included in the docker image
+#.env
+
+# Ignore user specific files
+.DS_Store
+.idea/
+
+# Ignore any kind of hidden files
+.*

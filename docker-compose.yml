@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: narek97/instant:latest
+    container_name: next_app
+    ports:
+      - "3000:3000"
+
