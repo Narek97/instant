@@ -8,6 +8,9 @@ const createJestConfig = nextJest({
 
 // Add any custom config to be passed to Jest
 const config: Config = {
+  moduleNameMapper: {
+    '^.+\\.(svg)$': '<rootDir>/__mock__/fileMock.ts',
+  },
   coverageProvider: 'v8',
   // collectCoverage: true,
   collectCoverageFrom: [
