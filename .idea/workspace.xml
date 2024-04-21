@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="config svg test mock">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/actions.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/eslint.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="change actions">
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/surveys/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/surveys/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +24,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="test" />
+                    <option name="lastUsedInstant" value="1713697610" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="new-ci" />
                     <option name="lastUsedInstant" value="1713697297" />
@@ -67,7 +69,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "new-ci",
+    "git-widget-placeholder": "test",
     "javascript.nodejs.core.library.configured.version": "20.10.0",
     "javascript.nodejs.core.library.typings.version": "20.10.8",
     "last_opened_file_path": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice",
@@ -205,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713693065161</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change actions">
+      <option name="closed" value="true" />
+      <created>1713697528165</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713697528165</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +226,7 @@
     <MESSAGE value="change gitignore" />
     <MESSAGE value="docker config" />
     <MESSAGE value="config svg test mock" />
-    <option name="LAST_COMMIT_MESSAGE" value="config svg test mock" />
+    <MESSAGE value="change actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="change actions" />
   </component>
 </project>

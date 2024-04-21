@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 const Surveys = () => {
   return (
     <>
+      <div>test</div>
       <SurveysPage />
     </>
   )
