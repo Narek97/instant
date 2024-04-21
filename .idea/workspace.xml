@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="docker config">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="test configuration">
+      <change afterPath="$PROJECT_DIR$/__mock__/fileMock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svgTransformer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/surveys-page/surveys-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/surveys-page/surveys-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,30 +62,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "docker",
-    "javascript.nodejs.core.library.configured.version": "20.10.0",
-    "javascript.nodejs.core.library.typings.version": "20.10.8",
-    "last_opened_file_path": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "npm.format.executor": "Run",
-    "npm.lint.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;tests-config&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.10.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.10.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/narekbabayan/Desktop/projects/instant-answers-backoffice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.format.executor&quot;: &quot;Run&quot;,
+    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
+    &quot;npm.test.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/narekbabayan/Desktop/projects/instant-answers-backoffice/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/narekbabayan/Desktop/projects/instant-answers-backoffice/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -97,12 +101,13 @@
       <recent name="$PROJECT_DIR$/src/app/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/__mock__" />
       <recent name="$PROJECT_DIR$/src/assets/icons" />
       <recent name="$PROJECT_DIR$/src/app/(auth)" />
       <recent name="$PROJECT_DIR$/src/components/templates/table-rows" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.lint">
+  <component name="RunManager" selected="npm.test">
     <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -123,8 +128,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.format" />
         <item itemvalue="npm.lint" />
