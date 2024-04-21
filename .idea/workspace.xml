@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="test configuration">
+    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="add test action">
       <change beforePath="$PROJECT_DIR$/.github/workflows/eslint.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/eslint.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713685276698</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add test action">
+      <option name="closed" value="true" />
+      <created>1713715696420</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713715696420</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +212,7 @@
     <MESSAGE value="ui design" />
     <MESSAGE value="change gitignore" />
     <MESSAGE value="docker config" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker config" />
+    <MESSAGE value="add test action" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test action" />
   </component>
 </project>
