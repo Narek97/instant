@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="config svg test mock" />
+    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="change action name">
+      <change beforePath="$PROJECT_DIR$/src/app/not-found.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/not-found.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +29,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="ci-test" />
+                    <option name="lastUsedInstant" value="1713698224" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1713698068" />
@@ -68,7 +74,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "ci-test",
     "javascript.nodejs.core.library.configured.version": "20.10.0",
     "javascript.nodejs.core.library.typings.version": "20.10.8",
     "last_opened_file_path": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice",
@@ -206,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713693065161</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change action name">
+      <option name="closed" value="true" />
+      <created>1713698085353</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713698085353</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +231,7 @@
     <MESSAGE value="change gitignore" />
     <MESSAGE value="docker config" />
     <MESSAGE value="config svg test mock" />
-    <option name="LAST_COMMIT_MESSAGE" value="config svg test mock" />
+    <MESSAGE value="change action name" />
+    <option name="LAST_COMMIT_MESSAGE" value="change action name" />
   </component>
 </project>

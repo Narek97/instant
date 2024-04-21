@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 const NotFound = () => {
   return (
     <>
+      <div>test</div>
       <NotFoundPage />
     </>
   )
