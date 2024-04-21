@@ -1,9 +1,13 @@
 'use client'
 import React, { FC } from 'react'
-import { APP_URL } from '@/constants/env'
+import {
+  APP_URL,
+  AUTHORIZATION_URL,
+  CALLBACK_URL,
+  CLIENT_ID,
+} from '@/constants/env'
 import { getCookies } from '@/utils/cookies'
 import { TOKEN_NAME } from '@/constants'
-import axios from 'axios'
 import useSWR from 'swr'
 import { axiosGetFetcher } from '@/utils/swr-fetcher'
 import CustomLoader from '@/components/ui/custom-loader/custom-loader'
@@ -21,7 +25,9 @@ const BaseLayout: FC<ILayout> = ({ children }) => {
   const [user, setUser] = useRecoilState(userState)
 
   const redirectToLogin = () => {
-    // window.location.href = `${AUTHORIZATION_URL}/?state=null&redirect_uri=${CALLBACK_URL}&response_type=code&client_id=${CLIENT_ID}`;
+    if (typeof window !== 'undefined') {
+      window.location.href = `${AUTHORIZATION_URL}/?state=null&redirect_uri=${CALLBACK_URL}&response_type=code&client_id=${CLIENT_ID}`
+    }
   }
 
   const { isLoading: isLoadingGetMe, error: errorGetMe } = useSWR(
@@ -35,28 +41,11 @@ const BaseLayout: FC<ILayout> = ({ children }) => {
     }
   )
 
-  axios.interceptors.request.use(
-    function (config: any) {
-      if (config.headers) {
-        config.headers = {
-          ...config.headers,
-          'Cache-Control': 'max-age=31536000',
-        }
-        if (token) {
-          config.headers.Authorization = `Bearer ${token}`
-        }
-      }
-      return config
-    },
-    function (error) {
-      return Promise.reject(error)
-    }
-  )
   if (!token) {
     redirectToLogin()
   }
 
-  if (isLoadingGetMe) {
+  if (isLoadingGetMe || !token) {
     return <CustomLoader />
   }
   if (errorGetMe) {
