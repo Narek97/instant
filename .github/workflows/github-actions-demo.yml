@@ -1,4 +1,4 @@
-name: Build, test, lint, code format
+name: GitHub Actions Demo
 on:
   push:
     branches: [ master ]
