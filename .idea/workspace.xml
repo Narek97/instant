@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="add test action">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/eslint.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/eslint.yml" afterDir="false" />
+    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="fix action name">
+      <change afterPath="$PROJECT_DIR$/src/app/api/api-logs/delete-all/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/error-logs/delete-all/route.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/get-api-logs/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/api-logs/get-all/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/get-error-logs/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/error-logs/get-all/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/error-boundary/error-boundary.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/error-boundary/error-boundary.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/admin/api-logs/api-logs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/admin/api-logs/api-logs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/admin/error-logs/error-logs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/admin/error-logs/error-logs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/surveys-page/surveys-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/surveys-page/surveys-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/cookies.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/cookies.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +34,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="delete-modal" />
+                    <option name="lastUsedInstant" value="1713775542" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="docker" />
                     <option name="lastUsedInstant" value="1713638574" />
@@ -64,10 +75,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "delete-modal",
     "javascript.nodejs.core.library.configured.version": "20.10.0",
     "javascript.nodejs.core.library.typings.version": "20.10.8",
-    "last_opened_file_path": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice",
+    "last_opened_file_path": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice/src/app/api/api-logs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.stylelint": "true",
@@ -97,13 +108,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/api/api-logs" />
       <recent name="$PROJECT_DIR$/src/app/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/api/api-logs" />
+      <recent name="$PROJECT_DIR$/src/app/api/error-loggs" />
+      <recent name="$PROJECT_DIR$/src/components/ui/custom-modal" />
       <recent name="$PROJECT_DIR$/__mock__" />
       <recent name="$PROJECT_DIR$/src/assets/icons" />
-      <recent name="$PROJECT_DIR$/src/app/(auth)" />
-      <recent name="$PROJECT_DIR$/src/components/templates/table-rows" />
     </key>
   </component>
   <component name="RunManager" selected="npm.test">
@@ -202,7 +215,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713715696420</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change test dependencies">
+      <option name="closed" value="true" />
+      <created>1713716217171</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713716217171</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix action name">
+      <option name="closed" value="true" />
+      <created>1713716586347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713716586347</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +242,8 @@
     <MESSAGE value="change gitignore" />
     <MESSAGE value="docker config" />
     <MESSAGE value="add test action" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test action" />
+    <MESSAGE value="change test dependencies" />
+    <MESSAGE value="fix action name" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix action name" />
   </component>
 </project>
