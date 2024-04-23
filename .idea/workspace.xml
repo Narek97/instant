@@ -4,18 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="fix action name">
-      <change afterPath="$PROJECT_DIR$/src/app/api/api-logs/delete-all/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/error-logs/delete-all/route.ts" afterDir="false" />
+    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="add delete functionality">
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/home/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/home/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/surveys/create/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/templates/home/create-survey-home/create-survey-home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/templates/home/create-survey-home/create-survey-home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/yup-validation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home-page/home-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home-page/home-page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/get-api-logs/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/api-logs/get-all/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/get-error-logs/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/error-logs/get-all/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reusable/error-boundary/error-boundary.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/error-boundary/error-boundary.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/get-surveys/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/surveys/get-surveys/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/hover-menu-panel/hover-menu-panel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/hover-menu-panel/hover-menu-panel.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/templates/admin/api-logs/api-logs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/admin/api-logs/api-logs.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/templates/admin/error-logs/error-logs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/admin/error-logs/error-logs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/table-rows/api-logs-row/api-logs-row.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/table-rows/api-logs-row/api-logs-row.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/table-rows/error-logs-row/error-logs-row.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/table-rows/error-logs-row/error-logs-row.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/table-rows/survey-row/survey-row.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/table-rows/survey-row/survey-row.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/tabs.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/surveys-page/surveys-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/surveys-page/surveys-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/types/admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/types/admin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/types/surveys.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/types/surveys.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/cookies.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/cookies.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +50,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="create-new-survey" />
+                    <option name="lastUsedInstant" value="1713785556" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="delete-modal" />
                     <option name="lastUsedInstant" value="1713775542" />
@@ -75,7 +95,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "delete-modal",
+    "git-widget-placeholder": "create-new-survey",
     "javascript.nodejs.core.library.configured.version": "20.10.0",
     "javascript.nodejs.core.library.typings.version": "20.10.8",
     "last_opened_file_path": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice/src/app/api/api-logs",
@@ -112,14 +132,14 @@
       <recent name="$PROJECT_DIR$/src/app/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/api/surveys" />
+      <recent name="$PROJECT_DIR$/src/components/templates/home/create-survey-home" />
       <recent name="$PROJECT_DIR$/src/app/api/api-logs" />
       <recent name="$PROJECT_DIR$/src/app/api/error-loggs" />
       <recent name="$PROJECT_DIR$/src/components/ui/custom-modal" />
-      <recent name="$PROJECT_DIR$/__mock__" />
-      <recent name="$PROJECT_DIR$/src/assets/icons" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="npm.lint">
     <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -152,8 +172,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.test" />
         <item itemvalue="npm.lint" />
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.format" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.format" />
@@ -231,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713716586347</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add delete functionality">
+      <option name="closed" value="true" />
+      <created>1713783677567</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713783677567</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +272,7 @@
     <MESSAGE value="add test action" />
     <MESSAGE value="change test dependencies" />
     <MESSAGE value="fix action name" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix action name" />
+    <MESSAGE value="add delete functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="add delete functionality" />
   </component>
 </project>

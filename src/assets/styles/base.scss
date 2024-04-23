@@ -48,3 +48,10 @@ ul {
   @include absolute-center;
   font-size: 24px;
 }
+
+.validation-error{
+  display: inline-block;
+  margin: 8px 0;
+  font-size: 12px;
+  color: $BASE-ERROR-COLOR;
+}

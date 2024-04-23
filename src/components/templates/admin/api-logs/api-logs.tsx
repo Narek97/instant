@@ -9,14 +9,14 @@ import CustomError from '@/components/ui/custome-error/custome-error'
 import useSWR from 'swr'
 import { APP_URL } from '@/constants/env'
 import { axiosGetFetcher, axiosPostFetcher } from '@/utils/swr-fetcher'
-import { ApiLog, ErrorLog } from '@/ts/types/admin'
+import { ApiLogType, ErrorLogType } from '@/ts/types/admin'
 import useSWRMutation from 'swr/mutation'
 import CustomModal from '@/components/ui/custom-modal/custom-modal'
 import DeleteModalFrame from '@/components/reusable/delete-modal-frame/delete-modal-frame'
 import Pagination from '@/components/reusable/pagination/pagination'
 
 const ApiLogs = () => {
-  const [apiLogs, setApiLogs] = useState<Array<ErrorLog> | null>(null)
+  const [apiLogs, setApiLogs] = useState<Array<ErrorLogType> | null>(null)
   const [isOpenDeleteModal, setIsOpenDeleteModal] = useState<boolean>(false)
   const [currentPage, setCurrentPage] = useState<number>(1)
 
@@ -120,7 +120,7 @@ const ApiLogs = () => {
                   <CustomTable
                     columns={columns}
                     rows={rows}
-                    rowFunction={(row: ApiLog) => <ApiLogsRow row={row} />}
+                    rowFunction={(row: ApiLogType) => <ApiLogsRow row={row} />}
                   />
                   {dataApiLogs.count > 10 ? (
                     <Pagination

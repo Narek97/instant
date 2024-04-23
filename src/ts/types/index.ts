@@ -62,3 +62,22 @@ export type ProductSwitcherMenuItemProductType = {
   logo: string
   order: number
 }
+
+export type DropdownSelectItemType = {
+  id?: number
+  name?: string | ReactNode
+  label?: string
+  value: string | number | null
+}
+
+export type DropdownWithCategorySelectItemType = {
+  id?: number
+  headerTitle?: string | ReactNode
+  group: DropdownSelectItemType[]
+}
+
+export type GetPageContentParamsType = {
+  content: any
+  defaultPage: ReactNode
+  key: string | null
+}

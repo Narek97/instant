@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
 import { StyledTableCell } from '@/components/ui/custom-table/custom-table'
-import { SurveyData } from '@/ts/types/surveys'
+import { SurveyDataType } from '@/ts/types/surveys'
 
 interface ISurveyRow {
-  row: SurveyData
+  row: SurveyDataType
 }
 
 const SurveyRow: FC<ISurveyRow> = ({ row }) => {

@@ -9,11 +9,11 @@ import { APP_URL } from '@/constants/env'
 import { axiosGetFetcher } from '@/utils/swr-fetcher'
 import CustomError from '@/components/ui/custome-error/custome-error'
 import CustomLoader from '@/components/ui/custom-loader/custom-loader'
-import { SurveyData } from '@/ts/types/surveys'
+import { SurveyDataType } from '@/ts/types/surveys'
 import Pagination from '@/components/reusable/pagination/pagination'
 
 const SurveysPage = () => {
-  const [surveys, setSurveys] = useState<Array<SurveyData> | null>(null)
+  const [surveys, setSurveys] = useState<Array<SurveyDataType> | null>(null)
   const [currentPage, setCurrentPage] = useState<number>(1)
 
   const {
@@ -21,7 +21,7 @@ const SurveysPage = () => {
     data: dataSurveys,
     error: errorSurveys,
   } = useSWR(
-    `${APP_URL}/api/get-surveys?page=${currentPage}&perPage=10`,
+    `${APP_URL}/api/surveys/get-surveys?page=${currentPage}&perPage=10`,
     axiosGetFetcher,
     {
       onSuccess: (data) => {
@@ -71,7 +71,9 @@ const SurveysPage = () => {
                   <CustomTable
                     columns={columns}
                     rows={rows}
-                    rowFunction={(row: SurveyData) => <SurveyRow row={row} />}
+                    rowFunction={(row: SurveyDataType) => (
+                      <SurveyRow row={row} />
+                    )}
                   />
                   {dataSurveys.count > 10 ? (
                     <Pagination
