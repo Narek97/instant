@@ -3,7 +3,6 @@ import './user-popover.scss'
 import { useRecoilValue } from 'recoil'
 import Bell from '@/assets/icons/header-icons/bell.svg'
 import Bug from '@/assets/icons/header-icons/bug.svg'
-// import CustomSwitcher from "../../../ui/custom-switcher/custom-switcher.tsx";
 import { TOKEN_NAME } from '@/constants'
 import { userState } from '@/store/atoms/user.atom'
 import { removeCookies } from '@/utils/cookies'
@@ -41,7 +40,6 @@ const UserPopover = () => {
         </div>
       </div>
       <div className={'header-user-popover--footer'}>
-        {/*<CustomSwitcher label={"Email subscribed"} labelPlacement={"start"} />*/}
         <Button onClick={logout} data-testid="logout-test-id">
           Log out
         </Button>

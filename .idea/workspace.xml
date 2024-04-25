@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="create survey ui">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/surveys/create/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/surveys/create/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/right-secondary-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/right-secondary-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/product-switcher/product-switcher-menu-hovered-Item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/product-switcher/product-switcher-menu-hovered-Item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/product-switcher/product-switcher-menu-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/product-switcher/product-switcher-menu-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/product-switcher/product-switcher.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/product-switcher/product-switcher.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/product-switcher/product-switcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/product-switcher/product-switcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/user-popover/user-popover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/user-popover/user-popover.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/user-popover/user-popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/user-popover/user-popover.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/types/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +36,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="header-api" />
+                    <option name="lastUsedInstant" value="1714034866" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="create-new-survey" />
                     <option name="lastUsedInstant" value="1713785556" />
@@ -70,7 +85,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "create-new-survey",
+    "git-widget-placeholder": "header-api",
     "javascript.nodejs.core.library.configured.version": "20.10.0",
     "javascript.nodejs.core.library.typings.version": "20.10.8",
     "last_opened_file_path": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice",
@@ -177,7 +192,7 @@
       <workItem from="1713521206792" duration="16385000" />
       <workItem from="1713616616611" duration="98000" />
       <workItem from="1713637747059" duration="6033000" />
-      <workItem from="1713881022961" duration="3254000" />
+      <workItem from="1713881022961" duration="12710000" />
     </task>
     <task id="LOCAL-00001" summary="ui design">
       <option name="closed" value="true" />
@@ -243,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713861021375</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="create survey ui">
+      <option name="closed" value="true" />
+      <created>1714034767999</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714034767999</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

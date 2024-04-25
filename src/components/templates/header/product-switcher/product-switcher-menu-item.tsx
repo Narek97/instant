@@ -2,8 +2,8 @@ import React, { FC, useState } from 'react'
 import RightArrow from '@/assets/icons/right-secondary-arrow.svg'
 import Lock from '@/assets/icons/header-icons/lock.svg'
 import { ProductSwitcherMenuItemType } from '@/ts/types'
-import ProductSwitcherMenuHoveredItem from '@/components/templates/header-templates/product-switcher/product-switcher-menu-hovered-Item'
 import { PRODUCT_SWITCHER_COLORS } from '@/constants/colors'
+import ProductSwitcherMenuHoveredItem from '@/components/templates/header/product-switcher/product-switcher-menu-hovered-Item'
 
 interface IProductSwitcherMenuItem {
   menuItem: ProductSwitcherMenuItemType
@@ -43,11 +43,7 @@ const ProductSwitcherMenuItem: FC<IProductSwitcherMenuItem> = ({
           </div>
         </div>
         {menuItem?.active ? (
-          <RightArrow
-            width={6}
-            className={'product-switcher--item--arrow'}
-            fill={'#545e6b'}
-          />
+          <RightArrow className={'product-switcher--item--arrow'} />
         ) : (
           <Lock />
         )}

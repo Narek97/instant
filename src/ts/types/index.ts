@@ -19,6 +19,7 @@ export type Usertype = {
   orgID?: number
   isAdmin?: boolean
   primaryUserAPIKey?: string
+  apiToken: string
   businessType?: {
     value: string
   }
