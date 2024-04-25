@@ -19,6 +19,7 @@ export type Usertype = {
   orgID?: number
   isAdmin?: boolean
   primaryUserAPIKey?: string
+  apiToken: string
   businessType?: {
     value: string
   }
@@ -61,4 +62,23 @@ export type ProductSwitcherMenuItemProductType = {
   active: boolean
   logo: string
   order: number
+}
+
+export type DropdownSelectItemType = {
+  id?: number
+  name?: string | ReactNode
+  label?: string
+  value: string | number | null
+}
+
+export type DropdownWithCategorySelectItemType = {
+  id?: number
+  headerTitle?: string | ReactNode
+  group: DropdownSelectItemType[]
+}
+
+export type GetPageContentParamsType = {
+  content: any
+  defaultPage: ReactNode
+  key: string | null
 }

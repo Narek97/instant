@@ -1,0 +1,70 @@
+@import 'src/assets/styles/variables';
+@import 'src/assets/styles/mixins';
+
+.create-survey-home {
+  width: 100%;
+  max-width: 880px;
+  padding: 40px 64px 15px 64px;
+  background-color: $BASE-WHITE-COLOR;
+
+  &--form-item-block {
+    width: 100%;
+  }
+
+  &--name-select-block {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  &--select-block {
+    min-width: 126px;
+    max-width: 126px;
+  }
+
+  &--description-block {
+    margin-top: 16px;
+  }
+
+  &--country-audience-block {
+    display: flex;
+    margin-top: 16px;
+    gap: 32px;
+  }
+
+  &--country-block {
+    width: 288px;
+  }
+
+  &--audience-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &--audience {
+    @include flex-center-center;
+    width: 80px;
+    height: 32px;
+    border: 1px solid $BASE-LIGHT-GRAY-COLOR;
+    cursor: pointer;
+  }
+
+  &--selected-audience {
+    color: $BASE-WHITE-COLOR;
+    background-color: $DARK_BLUE;
+  }
+
+  &--divider {
+    width: 100%;
+    height: 1px;
+    margin-top: 32px;
+    background-color: $BASE-LIGHT-GRAY-COLOR;
+  }
+
+  &--btn-block {
+    width: 100%;
+    margin-top: 16px;
+    text-align: right;
+  }
+}

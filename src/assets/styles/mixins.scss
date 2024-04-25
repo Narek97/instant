@@ -88,3 +88,15 @@
     background-color: $BASE-LIGHT-GRAY-COLOR;
   }
 }
+
+@mixin modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 12px;
+  height: 54px;
+  background-color: $BASE-WHITE-COLOR;
+  .cancel-button {
+    margin-right: 14px;
+  }
+}

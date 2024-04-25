@@ -1,4 +1,4 @@
-export interface ErrorLog {
+export type ErrorLogType = {
   id: number
   status: number
   message: string
@@ -9,7 +9,7 @@ export interface ErrorLog {
   created_at: string
 }
 
-export interface ApiLog {
+export type ApiLogType = {
   id: number
   status: number
   message: string

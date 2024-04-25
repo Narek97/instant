@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import BaseLayout from '@/layouts/base-layout'
-import Header from '@/components/templates/header-templates/header'
+import Header from '@/components/templates/header/header'
 
 interface IAuthLayout {
   children: React.ReactNode

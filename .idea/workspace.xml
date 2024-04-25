@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="add test action">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/eslint.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/eslint.yml" afterDir="false" />
+    <list default="true" id="685abb75-3f23-450d-8e0a-edbc900170a7" name="Changes" comment="create survey ui">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/right-secondary-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/right-secondary-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/product-switcher/product-switcher-menu-hovered-Item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/product-switcher/product-switcher-menu-hovered-Item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/product-switcher/product-switcher-menu-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/product-switcher/product-switcher-menu-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/product-switcher/product-switcher.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/product-switcher/product-switcher.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/product-switcher/product-switcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/product-switcher/product-switcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/user-popover/user-popover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/user-popover/user-popover.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/header-templates/user-popover/user-popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/header/user-popover/user-popover.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/types/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +36,18 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="header-api" />
+                    <option name="lastUsedInstant" value="1714034866" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="create-new-survey" />
+                    <option name="lastUsedInstant" value="1713785556" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="delete-modal" />
+                    <option name="lastUsedInstant" value="1713775542" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="docker" />
                     <option name="lastUsedInstant" value="1713638574" />
@@ -64,7 +85,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "header-api",
     "javascript.nodejs.core.library.configured.version": "20.10.0",
     "javascript.nodejs.core.library.typings.version": "20.10.8",
     "last_opened_file_path": "/Users/narekbabayan/Desktop/projects/instant-answers-backoffice",
@@ -97,16 +118,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/api/api-logs" />
       <recent name="$PROJECT_DIR$/src/app/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/__mock__" />
-      <recent name="$PROJECT_DIR$/src/assets/icons" />
-      <recent name="$PROJECT_DIR$/src/app/(auth)" />
-      <recent name="$PROJECT_DIR$/src/components/templates/table-rows" />
+      <recent name="$PROJECT_DIR$/src/app/api/surveys" />
+      <recent name="$PROJECT_DIR$/src/components/templates/home/create-survey-home" />
+      <recent name="$PROJECT_DIR$/src/app/api/api-logs" />
+      <recent name="$PROJECT_DIR$/src/app/api/error-loggs" />
+      <recent name="$PROJECT_DIR$/src/components/ui/custom-modal" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="npm.lint">
     <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -139,8 +162,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.test" />
         <item itemvalue="npm.lint" />
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.format" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.format" />
@@ -169,6 +192,7 @@
       <workItem from="1713521206792" duration="16385000" />
       <workItem from="1713616616611" duration="98000" />
       <workItem from="1713637747059" duration="6033000" />
+      <workItem from="1713881022961" duration="12710000" />
     </task>
     <task id="LOCAL-00001" summary="ui design">
       <option name="closed" value="true" />
@@ -202,7 +226,47 @@
       <option name="project" value="LOCAL" />
       <updated>1713715696420</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change test dependencies">
+      <option name="closed" value="true" />
+      <created>1713716217171</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713716217171</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix action name">
+      <option name="closed" value="true" />
+      <created>1713716586347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713716586347</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add delete functionality">
+      <option name="closed" value="true" />
+      <created>1713783677567</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713783677567</updated>
+    </task>
+    <task id="LOCAL-00008" summary="create survey ui">
+      <option name="closed" value="true" />
+      <created>1713861021375</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713861021375</updated>
+    </task>
+    <task id="LOCAL-00009" summary="create survey ui">
+      <option name="closed" value="true" />
+      <created>1714034767999</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714034767999</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +277,10 @@
     <MESSAGE value="change gitignore" />
     <MESSAGE value="docker config" />
     <MESSAGE value="add test action" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test action" />
+    <MESSAGE value="change test dependencies" />
+    <MESSAGE value="fix action name" />
+    <MESSAGE value="add delete functionality" />
+    <MESSAGE value="create survey ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="create survey ui" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-@import "../../../../assets/styles/variables";
+@import '../../../../assets/styles/variables';
 
 .product-switcher {
   position: absolute;
@@ -29,6 +29,7 @@
       background-color: $BASE-WHITE-COLOR;
 
       &--block {
+        width: calc(100% - 16px);
         display: flex;
         gap: 8px;
       }

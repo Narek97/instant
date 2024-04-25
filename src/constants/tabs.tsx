@@ -3,6 +3,7 @@ import React from 'react'
 import { MenuTabType, TabPanelType, TabType } from '@/ts/types'
 import Home from '../assets/icons/home.svg'
 import Admin from '../assets/icons/admin.svg'
+import Survey from '../assets/icons/surveys.svg'
 import ErrorLogs from '@/components/templates/admin/error-logs/error-logs'
 import ApiLogs from '@/components/templates/admin/api-logs/api-logs'
 import Cpi from '@/components/templates/admin/cpi/cpi'
@@ -10,6 +11,12 @@ import Cpi from '@/components/templates/admin/cpi/cpi'
 export const LEFT_MENU_TOP_TABS: Array<MenuTabType> = [
   {
     icon: <Home />,
+    name: 'Home',
+    url: '/home',
+    regexp: /^(\/home)?$/,
+  },
+  {
+    icon: <Survey />,
     name: 'Surveys',
     url: '/surveys',
     regexp: /^(\/surveys)?$/,

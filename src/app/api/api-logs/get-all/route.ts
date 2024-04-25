@@ -13,8 +13,6 @@ export async function GET(request: Request) {
     },
   }
 
-  console.log('log')
-
   return axios
     .get(`${API_BASE_URL}/api-errors?page=${page}&perPage=${perPage}`, configs)
     .then((response) => Response.json(response.data))

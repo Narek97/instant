@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
 import { StyledTableCell } from '@/components/ui/custom-table/custom-table'
 import dayjs from 'dayjs'
-import { ApiLog } from '@/ts/types/admin'
+import { ApiLogType } from '@/ts/types/admin'
 
 interface IApiLogsRow {
-  row: ApiLog
+  row: ApiLogType
 }
 
 const ApiLogsRow: FC<IApiLogsRow> = ({ row }) => {

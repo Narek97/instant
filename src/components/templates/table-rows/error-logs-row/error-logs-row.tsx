@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
 import { StyledTableCell } from '@/components/ui/custom-table/custom-table'
 import dayjs from 'dayjs'
-import { ErrorLog } from '@/ts/types/admin'
+import { ErrorLogType } from '@/ts/types/admin'
 
 interface IErrorLogRow {
-  row: ErrorLog
+  row: ErrorLogType
 }
 
 const ErrorLogRow: FC<IErrorLogRow> = ({ row }) => {

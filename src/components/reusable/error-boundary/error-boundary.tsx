@@ -32,7 +32,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
       return (
         <div className={'error-boundary'}>
           {/*{this.state.isOpenModal && (*/}
-          {/*  <CustomModal*/}
+          {/*  <CustomModal1*/}
           {/*    isOpen={true}*/}
           {/*    modalSize={"lg"}*/}
           {/*    handleClose={() => {*/}
@@ -46,7 +46,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
           {/*    <div className={"error-boundary--modal-content"}>*/}
           {/*      <p> {this.state.errorInfo.componentStack}</p>*/}
           {/*    </div>*/}
-          {/*  </CustomModal>*/}
+          {/*  </CustomModal1>*/}
           {/*)}*/}
           <h2 className={'error-boundary--title'}>
             Oops... the data is broken. A fix will be made soon
